@@ -31,19 +31,35 @@
                                                                                           /* Creates a hard, blocky 8-bit shadow */
                                                                                               text-shadow: 3px 3px 0 #000000; 
                                                                                                   
-                                                                                                      /* Removed the bottom margin so the text is perfectly centered */
-                                                                                                          margin: 0; 
+                                                                                                      /* This adds the space you requested below the text! */
+                                                                                                          margin: 0 0 50px 0; 
                                                                                                           }
 
+                                                                                                          .pixel-image {
+                                                                                                              /* Ensures the image shrinks to fit a mobile screen */
+                                                                                                                  max-width: 100%; 
+                                                                                                                      height: auto;
+                                                                                                                          
+                                                                                                                              /* Adds a chunky, game-like border to your JPG */
+                                                                                                                                  border: 4px solid #000000; 
+                                                                                                                                      box-shadow: 6px 6px 0 #000000;
+                                                                                                                                      }
 
-                                                                                                          /* =========================================
-                                                                                                             TABLET & DESKTOP STYLES
-                                                                                                                ========================================= */
-                                                                                                                /* As the screen gets wider, we make the text larger */
-                                                                                                                @media (min-width: 768px) {
-                                                                                                                    h1 {
-                                                                                                                            font-size: 2.2rem;
-                                                                                                                                    text-shadow: 5px 5px 0 #000000; 
-                                                                                                                                        }
-                                                                                                                                        }
-                                                                                                                                        
+
+                                                                                                                                      /* =========================================
+                                                                                                                                         TABLET & DESKTOP STYLES
+                                                                                                                                            ========================================= */
+                                                                                                                                            /* As the screen gets wider, we make the text and image larger */
+                                                                                                                                            @media (min-width: 768px) {
+                                                                                                                                                h1 {
+                                                                                                                                                        font-size: 2.2rem;
+                                                                                                                                                                margin: 0 0 70px 0;
+                                                                                                                                                                        text-shadow: 5px 5px 0 #000000; 
+                                                                                                                                                                            }
+
+                                                                                                                                                                                .pixel-image {
+                                                                                                                                                                                        /* Prevents the image from getting too massive on a big monitor */
+                                                                                                                                                                                                max-width: 600px; 
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    
