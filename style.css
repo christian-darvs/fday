@@ -1,65 +1,64 @@
 /* =========================================
    BASE STYLES (MOBILE FIRST)
-      ========================================= */
-      body {
-          margin: 0;
-              padding: 0;
-                  /* Classic Mario sky blue background */
-                      background-color: #5c94fc; 
-                          /* Applies the pixelated font */
-                              font-family: 'Press Start 2P', cursive; 
-                                  
-                                      /* Flexbox centers everything horizontally and vertically */
-                                          display: flex;
-                                              justify-content: center;
-                                                  align-items: center;
-                                                      min-height: 100vh;
-                                                          text-align: center;
-                                                          }
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    /* Classic Mario sky blue background */
+    background-color: #5c94fc; 
+    /* Applies the pixelated font */
+    font-family: 'Press Start 2P', cursive; 
+    
+    /* Flexbox centers everything horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
 
-                                                          .container {
-                                                              padding: 20px;
-                                                                  width: 100%;
-                                                                      box-sizing: border-box;
-                                                                      }
+.container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-                                                                      h1 {
-                                                                          color: #ffffff;
-                                                                              /* Small enough to fit mobile screens without overflowing */
-                                                                                  font-size: 1.2rem; 
-                                                                                      line-height: 1.8;
-                                                                                          /* Creates a hard, blocky 8-bit shadow */
-                                                                                              text-shadow: 3px 3px 0 #000000; 
-                                                                                                  
-                                                                                                      /* This adds the space you requested below the text! */
-                                                                                                          margin: 0 0 50px 0; 
-                                                                                                          }
+h1 {
+    color: #ffffff;
+    /* Small enough to fit mobile screens without overflowing */
+    font-size: 1.2rem; 
+    line-height: 1.8;
+    /* Creates a hard, blocky 8-bit shadow */
+    text-shadow: 3px 3px 0 #000000; 
+    
+    /* This adds the space you requested below the text! */
+    margin: 0 0 50px 0; 
+}
 
-                                                                                                          .pixel-image {
-                                                                                                              /* Ensures the image shrinks to fit a mobile screen */
-                                                                                                                  max-width: 100%; 
-                                                                                                                      height: auto;
-                                                                                                                          
-                                                                                                                              /* Adds a chunky, game-like border to your JPG */
-                                                                                                                                  border: 4px solid #000000; 
-                                                                                                                                      box-shadow: 6px 6px 0 #000000;
-                                                                                                                                      }
+.pixel-image {
+    /* Ensures the image shrinks to fit a mobile screen */
+    max-width: 100%; 
+    height: auto;
+    
+    /* Adds a chunky, game-like border to your JPG */
+    border: 4px solid #000000; 
+    box-shadow: 6px 6px 0 #000000;
+}
 
 
-                                                                                                                                      /* =========================================
-                                                                                                                                         TABLET & DESKTOP STYLES
-                                                                                                                                            ========================================= */
-                                                                                                                                            /* As the screen gets wider, we make the text and image larger */
-                                                                                                                                            @media (min-width: 768px) {
-                                                                                                                                                h1 {
-                                                                                                                                                        font-size: 2.2rem;
-                                                                                                                                                                margin: 0 0 70px 0;
-                                                                                                                                                                        text-shadow: 5px 5px 0 #000000; 
-                                                                                                                                                                            }
+/* =========================================
+   TABLET & DESKTOP STYLES
+   ========================================= */
+/* As the screen gets wider, we make the text and image larger */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        margin: 0 0 70px 0;
+        text-shadow: 5px 5px 0 #000000; 
+    }
 
-                                                                                                                                                                                .pixel-image {
-                                                                                                                                                                                        /* Prevents the image from getting too massive on a big monitor */
-                                                                                                                                                                                                max-width: 600px; 
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    
+    .pixel-image {
+        /* Prevents the image from getting too massive on a big monitor */
+        max-width: 600px; 
+    }
+}
