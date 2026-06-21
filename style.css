@@ -1,0 +1,49 @@
+/* =========================================
+   BASE STYLES (MOBILE FIRST)
+      ========================================= */
+      body {
+          margin: 0;
+              padding: 0;
+                  /* Classic Mario sky blue background */
+                      background-color: #5c94fc; 
+                          /* Applies the pixelated font */
+                              font-family: 'Press Start 2P', cursive; 
+                                  
+                                      /* Flexbox centers everything horizontally and vertically */
+                                          display: flex;
+                                              justify-content: center;
+                                                  align-items: center;
+                                                      min-height: 100vh;
+                                                          text-align: center;
+                                                          }
+
+                                                          .container {
+                                                              padding: 20px;
+                                                                  width: 100%;
+                                                                      box-sizing: border-box;
+                                                                      }
+
+                                                                      h1 {
+                                                                          color: #ffffff;
+                                                                              /* Small enough to fit mobile screens without overflowing */
+                                                                                  font-size: 1.2rem; 
+                                                                                      line-height: 1.8;
+                                                                                          /* Creates a hard, blocky 8-bit shadow */
+                                                                                              text-shadow: 3px 3px 0 #000000; 
+                                                                                                  
+                                                                                                      /* Removed the bottom margin so the text is perfectly centered */
+                                                                                                          margin: 0; 
+                                                                                                          }
+
+
+                                                                                                          /* =========================================
+                                                                                                             TABLET & DESKTOP STYLES
+                                                                                                                ========================================= */
+                                                                                                                /* As the screen gets wider, we make the text larger */
+                                                                                                                @media (min-width: 768px) {
+                                                                                                                    h1 {
+                                                                                                                            font-size: 2.2rem;
+                                                                                                                                    text-shadow: 5px 5px 0 #000000; 
+                                                                                                                                        }
+                                                                                                                                        }
+                                                                                                                                        
